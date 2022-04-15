@@ -7,4 +7,5 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <link rel="stylesheet" href="./css/master.css">
   <script src="./script/bootstrap.bundle.min.js" charset="utf-8"></script>
+  <link rel="icon" href="./img/logo.png">
 </head>

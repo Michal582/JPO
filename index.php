@@ -1,17 +1,17 @@
 <?php
   session_start();
   include('triggers.php');
-  
+
 ?>
 
 <!DOCTYPE html>
 <html lang="pl">
-  
+
   <?php include('head.php'); ?>
   <body>
 
-    <?php include('header.php'); ?>
-    
+    <?php include('header-main.php'); ?>
+    <?php include ('navbar-main.php'); ?>
 
 
     <main>
@@ -19,7 +19,7 @@
     </main>
 
     <?php include('footer.php'); ?>
-    
+
 
   </body>
 </html>
