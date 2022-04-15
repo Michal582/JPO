@@ -8,4 +8,5 @@
   <link rel="stylesheet" href="./css/master.css">
   <script src="./script/bootstrap.bundle.min.js" charset="utf-8"></script>
   <link rel="icon" href="./img/logo.png">
+  <script src="https://kit.fontawesome.com/6987047b10.js" crossorigin="anonymous"></script>
 </head>
