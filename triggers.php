@@ -34,7 +34,7 @@ if (isset($_POST['login_sub']) &&
   $passwd   = md5($_POST['passwd']);
 
   try {
-    $pdo = new PDO("sqlite:users.sqlite");
+    $pdo = new PDO("sqlite:database.sqlite");
     $sql = $pdo->prepare("SELECT * FROM users WHERE username=:username AND passwd=:passwd");
 
     if (!$sql) {
@@ -45,18 +45,18 @@ if (isset($_POST['login_sub']) &&
     $sql -> execute(array(':username' => $username, ':passwd' => $passwd));
 
     while ($row = $sql->fetch()) {
-          
+
       //TODO: remember me:
-    
+
       if ($row['username'] == $username && $row['passwd'] == $passwd) {
         $_SESSION['username']   = $row['username'];
-        $_SESSION['permission'] = $row['permission'];
-        
+        $_SESSION['permission'] = $row['perm'];
+
         header('Location: index.php');
         die;
       }
-    } 
-    
+    }
+
     echo "bad password or login";
     // header('Location: index.php');
     die;
@@ -65,7 +65,7 @@ if (isset($_POST['login_sub']) &&
     echo "cos sie zepsulo: ". $e->getMessage();
     die;
   }
-  
+
 
 }
 //INFO: password must contain minimum of 6 chars, 1 number, one uppercase char, one lowercace char:
@@ -81,8 +81,6 @@ $_POST['passwd'] == $_POST['ConfirmPasswd']) {
   $username = $_POST['username'];
   $passwd   = md5($_POST['passwd']);
   $email    = $_POST['email'];
-  //INFO: czym to moze byc xD
-  $info = rand(0, 127);
 
   $uppercase = preg_match('@[A-Z]@', $passwd);
   $lowercase = preg_match('@[a-z]@', $passwd);
@@ -99,12 +97,12 @@ $_POST['passwd'] == $_POST['ConfirmPasswd']) {
   }
 
   try {
-    $pdo = new PDO("sqlite:users.sqlite");
+    $pdo = new PDO("sqlite:database.sqlite");
 
     //check if user is in table, if not preceed
     $sql = $pdo->prepare("SELECT COUNT(*) FROM users WHERE username = :username");
     $sql->execute(array(':username' => $username));
-    
+
     //BECAUSE $sql->fetchColumn() > 0 DOESNT WORK TO ROBIE TAK
     $countQuery = $sql->fetchColumn();
     if ($countQuery > 0) {
@@ -119,18 +117,18 @@ $_POST['passwd'] == $_POST['ConfirmPasswd']) {
     if ($countQuery > 0) {
       somethingExistsErr("email");
     }
-    
 
-    $sql = $pdo->prepare("INSERT INTO users(id, username, passwd, email, info, permission) VALUES (:id, :username, :passwd, :email, :info, :permission)");
+
+    $sql = $pdo->prepare("INSERT INTO users(email, username, passwd) VALUES (:email, :username, :passwd)");
     if (!$sql) {
       echo "co jest: ".var_dump($pdo);
-    } 
+    }
 
     //INFO: By passing the parameters along with the $pdo->execute() method, all values in the array with be passed, as PDO::PARAM_STR to the statement with the $pdo->bindParam() function. https://stackoverflow.com/questions/12392424/pdo-bindparam-vs-execute
 
-    $sql -> execute(array(':id' => NULL, ':username' => $username, ':passwd' => $passwd, ':email' => $email, ':info' => $info, ':permission' => 4));
+    $sql -> execute(array(':email' => $email, ':username' => $username, ':passwd' => $passwd));
 
-  } 
+  }
   catch (PDOException $e) {
     echo "cos sie zepsulo: ". $e->getMessage();
 
@@ -140,15 +138,15 @@ $_POST['passwd'] == $_POST['ConfirmPasswd']) {
       throw $e;
     }
     die;
-  } 
+  }
   catch (Exception $e) {
      $message = 'cos niezwiazanego z baza'.$e->getMessage();
   }
 
   echo "xd";
   $_SESSION['username']   = $username;
-  $_SESSION['permission'] = 4;
-        
+  $_SESSION['permission'] = 1;
+
   header('Location: index.php');
   die;
 
@@ -164,8 +162,7 @@ if (isset($_GET['cmd']) && $_GET['cmd']=="logout") {
          $params["secure"], $params["httponly"]
      );
   }
-  session_unset('username');
-  session_unset('permission');
+  session_unset();
   session_destroy();
   header('Location: index.php');
   die;
