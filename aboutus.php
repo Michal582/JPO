@@ -45,10 +45,10 @@
       </div>
       <div class="col-sm-4">
         <div class="card">
-          <img src="./img/op2.jpeg" class="card-img-top">
+          <img src="./img/op2.jpg" class="card-img-top">
           <div class="card-body">
             <blockquote class="blockquote">
-              <p>Pracownicy obsługa na najwyższym poziomie pełen profesjonalizm. Auta zawsze czyste i zadbane. Moje ulubione to Renault Megane</p>
+              <p>Pracownicy, obsługa na najwyższym poziomie pełen profesjonalizm. Auta zawsze czyste i zadbane.</p>
             </blockquote>
             <figcaption class="blockquote-footer">
               Oskar
