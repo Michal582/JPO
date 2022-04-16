@@ -1,5 +1,4 @@
 <?php
-  session_start();
   include('triggers.php');
 
 ?>
@@ -12,7 +11,17 @@
 
     <?php include('header-main.php'); ?>
     <?php include ('navbar-main.php'); ?>
+    
+    <?php
+      if (isset($_SESSION['username']) && !empty($_SESSION['username'])) {
+        echo $_SESSION['username'];
 
+        echo "
+        <a href='?cmd=logout'>wyjeb</a>
+        ";
+      }
+
+    ?>
 
     <main>
 

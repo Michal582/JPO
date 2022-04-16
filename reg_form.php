@@ -16,6 +16,7 @@
             <p class="text-white-50 mb-5">rejestruj sie cepie</p>
 
             <!-- middle -->
+          <div class='form-reg'>
             <form action="" method="post">
               <div class="form-outline form-white mb-4 w-25">
                 <input type="text" name="username" id="username" class="form-control form-control-lg" placeholder="numer jenca" />
@@ -23,7 +24,7 @@
               </div>
 
               <div class="form-outline form-white mb-4 w-25">
-                <input type="text" name="passwd" id="passwd" class="form-control form-control-lg" placeholder="potwierdzenie hasla" />
+                <input type="text" name="passwd" id="passwd" class="form-control form-control-lg" placeholder="haslo" />
                 <input type="text" name="ConfirmPasswd" id="ConfirmPasswd" class="form-control form-control-lg" placeholder="powtorz to" /> <span class='text-danger invisible' id="password-matching">chuja nie pasuje</span>
               </div>
 
@@ -31,6 +32,7 @@
               <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="index.php">skleroza??????</a></p>
               <input name='register_sub' id='register_sub' class="btn btn-outline-dark btn-lg px-5" type="submit" value='wrzuc mnie'>
             </form>
+          </div>
 
     <?php include('footer.php'); ?>
   </body>

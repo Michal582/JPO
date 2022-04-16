@@ -47,6 +47,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
+        <!-- o ile nie jestes zalogowany -->
         <h5 class="modal-title">Zaloguj się</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
@@ -61,7 +62,7 @@
             <input type="password" name="passwd" id="passwd" class="form-control">
           </div>
           <p class="small mb-3 text-center"><a class="text-black" href="reg_form.php">Przypomnij hasło</a></p>
-          <p class="mb-3 text-center"><a class="text-black" href="" >Nie masz konta? Zarejestruj się</a></p>
+          <p class="mb-3 text-center"><a class="text-black" href="reg_form.php" >Nie masz konta? Zarejestruj się</a></p>
           <div class="modal-footer">
             <input name='login_sub' class="btn btn-danger" type="submit" value="Zaloguj się">
           </div>
