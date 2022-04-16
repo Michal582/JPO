@@ -1,4 +1,4 @@
-<section class="main-page-search" id="search">
+<section class="main-page-search mb-4" id="searchCar">
   <div class="row">
     <div class="col-md-4" style="padding-right: 0;">
       <div class="main-search-bg text-center">
