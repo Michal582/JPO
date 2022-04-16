@@ -11,8 +11,6 @@
 
     <?php include('header-main.php');
           include ('navbar-main.php');
-          include 'promotion-main.php';
-          include 'search-main.php';
     ?>
 
     <?php
@@ -27,7 +25,11 @@
     ?>
 
     <main>
-
+      <?php
+        include 'promotion-main.php';
+        include 'search-main.php';
+        include 'aboutus.php';
+      ?>
     </main>
 
     <?php include('footer.php'); ?>

@@ -57,3 +57,14 @@
 .main-search-form{
   border-bottom-right-radius: 20px;
 }
+#aboutUs{
+  height: 500px;
+  /* background-color: black; */
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+#aboutUs img{
+  max-height: 100%;
+  width: 100%;
+}

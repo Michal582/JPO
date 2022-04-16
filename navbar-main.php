@@ -6,7 +6,7 @@
       <div class="d-flex justify-content-center">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item"><a href="#searchCar" class="nav-link">Rezerwuj Auto</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">O Nas</a></li>
+          <li class="nav-item"><a href="#aboutUs" class="nav-link">O Nas</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Nasza Flota</a></li>
           <li class="nav-item"><a href="#" class="nav-link">Kontakt</a></li>
         </ul>
