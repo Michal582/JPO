@@ -9,9 +9,12 @@
   <?php include('head.php'); ?>
   <body>
 
-    <?php include('header-main.php'); ?>
-    <?php include ('navbar-main.php'); ?>
-    
+    <?php include('header-main.php');
+          include ('navbar-main.php');
+          include 'promotion-main.php';
+          include 'search-main.php';
+    ?>
+
     <?php
       if (isset($_SESSION['username']) && !empty($_SESSION['username'])) {
         echo $_SESSION['username'];

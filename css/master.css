@@ -10,3 +10,50 @@
   height: 100px;
   max-width: 100%;
 }
+.main-page-promotions{
+  height: 600px;
+  width: 100%;
+  background-color: #000;
+  position: relative;
+  z-index: 0;
+}
+.main-page-search{
+  background-color: red;
+  width: 60%;
+  height: 200px;
+  margin: 0 auto;
+  top: -50px;
+  z-index: 2;
+  position: relative;
+  -webkit-box-shadow: 3px 0 29px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 3px 0 29px rgba(0, 0, 0, 0.26);
+  box-shadow: 3px 0 29px rgba(0, 0, 0, 0.26);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.main-search-bg{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.main-search-bg::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../img/searchpic.png");
+    background-size: 100% 100%;
+    border-bottom-left-radius: 20px;
+    opacity: .3;
+}
+.main-search-title{
+  position: relative;
+  top: 35%;
+}
+.main-search-form{
+  border-bottom-right-radius: 20px;
+}
