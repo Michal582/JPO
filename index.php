@@ -9,8 +9,8 @@
   <?php include('head.php'); ?>
   <body>
 
-    <?php include('header-main.php');
-          include ('navbar-main.php');
+    <?php include('./view/header-main.php');
+          include ('./view/navbar-main.php');
     ?>
 
     <?php
@@ -26,13 +26,14 @@
 
     <main>
       <?php
-        include 'promotion-main.php';
-        include 'search-main.php';
-        include 'aboutus.php';
+        include './view/promotion-main.php';
+        include './view/search-main.php';
+        include './view/aboutus.php';
+        include './view/fleet.php';
       ?>
     </main>
 
-    <?php include('footer.php'); ?>
+    <?php include('./view/footer.php'); ?>
 
 
   </body>
