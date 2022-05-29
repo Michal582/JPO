@@ -9,8 +9,8 @@
 
   <body>
 
-    <?php include('header-main.php'); ?>
-    <?php include 'navbar-main.php' ?>
+    <?php include('./view/header-main.php'); ?>
+    <?php include './view/navbar-main.php' ?>
 
             <!-- header -->
             <p class="text-white-50 mb-5">rejestruj sie cepie</p>
@@ -34,7 +34,7 @@
             </form>
           </div>
 
-    <?php include('footer.php'); ?>
+    <?php include('./view/footer.php'); ?>
   </body>
 </html>
 

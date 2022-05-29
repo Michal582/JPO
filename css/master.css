@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .header-main-page{
   background-color: #000;
   color: #fff;
@@ -58,7 +61,6 @@
   border-bottom-right-radius: 20px;
 }
 #aboutUs{
-  height: 500px;
   /* background-color: black; */
   width: 60%;
   margin: 0 auto;
@@ -67,4 +69,24 @@
 #aboutUs img{
   max-height: 100%;
   width: 100%;
+}
+#fleet{
+  width: 60%;
+  margin: 0 auto;
+}
+.fleet-image-main{
+  width: auto;
+  max-height: 225px;
+}
+#contact{
+  width: 100%;
+  color: #fff;
+  background-color: #000;
+  margin: 0 auto;
+}
+footer{
+  background-color: #000;
+  height: 50px;
+  color: #fff;
+  text-align: center;
 }

@@ -5,13 +5,14 @@
         <h4 class="text-white main-search-title fw-bold">Znajdź Samochód Dla Siebie</h4>
       </div>
     </div>
-    <div class="col bg-white main-search-form">
+    <div class="col-md bg-white main-search-form">
       <div class="container">
         <form action="" method="post">
           <div class="row pt-3" style="height: 100px;">
-            <div class="col">
+            <div class="col-md">
               <div class="form-floating">
                 <select class="form-select" name="">
+                  <option value=""></option>
                   <option value="Gdańsk">Gdańsk</option>
                   <option value="Katowice">Katowice</option>
                   <option value="Kraków">Kraków</option>
@@ -23,9 +24,10 @@
                 <label>Miejsce odbioru samochodu</label>
               </div>
             </div>
-            <div class="col">
+            <div class="col-md">
               <div class="form-floating">
                 <select class="form-select" name="">
+                  <option value=""></option>
                   <option value="Gdańsk">Gdańsk</option>
                   <option value="Katowice">Katowice</option>
                   <option value="Kraków">Kraków</option>
@@ -39,19 +41,19 @@
             </div>
           </div>
           <div class="row" style="height: 100px;">
-            <div class="col">
+            <div class="col-md">
               <div class="form-floating">
                 <input type="date" name="" value="" class="form-control">
                 <label for="">Data odbioru</label>
               </div>
             </div>
-            <div class="col">
+            <div class="col-md">
               <div class="form-floating">
                 <input type="date" name="" value="" class="form-control">
                 <label>Data zwrotu</label>
               </div>
             </div>
-            <div class="col text-center">
+            <div class="col-md text-center">
               <input type="submit" name="" value="Wyszukaj" class="btn btn-lg btn-danger" role="group">
             </div>
           </div>
