@@ -74,9 +74,12 @@ html {
   width: 60%;
   margin: 0 auto;
 }
-.fleet-image-main{
-  width: auto;
-  max-height: 225px;
+#fleet .card{
+  height: 500px;
+}
+#fleet img{
+  width: 100%;
+  height: auto;
 }
 #contact{
   width: 100%;
@@ -85,8 +88,5 @@ html {
   margin: 0 auto;
 }
 footer{
-  background-color: #000;
   height: 50px;
-  color: #fff;
-  text-align: center;
 }

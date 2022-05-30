@@ -23,8 +23,15 @@
       </form>
     </div>
     <div class="col-sm text-center">
-      <h5 class="mb-3">Nasze oddziały</h5>
-      <div class="mx-auto" id="compBranch" style="width: 80%; height: 80%;"></div>
+      <h3 class="mb-3">Dane firmy</h3>
+      <div class="mb-3">
+        <p>ZigRent</p>
+        <p>Wojska Polskiego 1</p>
+        <p>60-001 Poznań</p>
+        <p>Tel: <a href="tel:123456789" class="text-decoration-none">123 456 789</a></p>
+        <p>E-mail: <a href="mailto:bok@zigrent.pl" class="text-decoration-none">bok@zigrent.pl</a></p>
+      </div>
+      <div class="mx-auto" id="compBranch" style="width: 80%; height: 40%;"></div>
     </div>
   </div>
 </section>

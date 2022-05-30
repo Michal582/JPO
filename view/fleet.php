@@ -20,7 +20,9 @@
                 <i class="fa-solid fa-person"></i> 4 osoby
               </div>
             </div>
-            <a href="#" class="btn btn-danger">Zarezerwuj</a>
+          </div>
+          <div class="card-footer text-center">
+            <a href="#" class="btn btn-danger ">Zarezerwuj</a>
           </div>
         </div>
       </div>
@@ -42,7 +44,9 @@
                 <i class="fa-solid fa-person"></i> 5 osób
               </div>
             </div>
-            <a href="#" class="btn btn-danger">Zarezerwuj</a>
+          </div>
+          <div class="card-footer text-center">
+            <a href="#" class="btn btn-danger ">Zarezerwuj</a>
           </div>
         </div>
       </div>
@@ -64,7 +68,9 @@
                 <i class="fa-solid fa-person"></i> 5 osób
               </div>
             </div>
-            <a href="#" class="btn btn-danger">Zarezerwuj</a>
+          </div>
+          <div class="card-footer text-center">
+            <a href="#" class="btn btn-danger ">Zarezerwuj</a>
           </div>
         </div>
       </div>
@@ -88,7 +94,9 @@
                 <i class="fa-solid fa-person"></i> 5 osób
               </div>
             </div>
-            <a href="#" class="btn btn-danger">Zarezerwuj</a>
+          </div>
+          <div class="card-footer text-center">
+            <a href="#" class="btn btn-danger ">Zarezerwuj</a>
           </div>
         </div>
       </div>
@@ -110,7 +118,9 @@
                 <i class="fa-solid fa-person"></i> 5 osób
               </div>
             </div>
-            <a href="#" class="btn btn-danger">Zarezerwuj</a>
+          </div>
+          <div class="card-footer text-center">
+            <a href="#" class="btn btn-danger ">Zarezerwuj</a>
           </div>
         </div>
       </div>
@@ -129,7 +139,9 @@
                 <i class="fa-solid fa-person"></i> 2 osoby
               </div>
             </div>
-            <a href="#" class="btn btn-danger">Zarezerwuj</a>
+          </div>
+          <div class="card-footer text-center">
+            <a href="#" class="btn btn-danger ">Zarezerwuj</a>
           </div>
         </div>
       </div>
